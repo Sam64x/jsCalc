@@ -1,43 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Mr.Calculator</title>
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Oxygen+Mono"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="brain/css/style.css" />
-		<link rel="icon" type="image/png" href="brain/img/fav.png" />
-	</head>
-	<body>
-		<div id="calculator">
-			<div id="result">0</div>
-			<button onclick="cls();">AC</button>
-			<button onclick="num(this.innerHTML);">7</button>
-			<button onclick="num(this.innerHTML);">8</button>
-			<button onclick="num(this.innerHTML);">9</button>
-			<button onclick="calc(this.innerHTML);">/</button>
-			<button onclick="num(this.innerHTML);">4</button>
-			<button onclick="num(this.innerHTML);">5</button>
-			<button onclick="num(this.innerHTML);">6</button>
-			<button onclick="calc(this.innerHTML);">*</button>
-			<button onclick="num(this.innerHTML);">1</button>
-			<button onclick="num(this.innerHTML);">2</button>
-			<button onclick="num(this.innerHTML);">3</button>
-			<button onclick="calc(this.innerHTML);">-</button>
-			<button onclick="num(this.innerHTML);">0</button>
-			<button onclick="num(this.innerHTML);">.</button>
-			<button onclick="total();">=</button>
-			<button onclick="calc(this.innerHTML);">+</button>
-			<div id="smallResult"></div>
-		</div>
-		<script src="brain/js/script.js"></script>
-	</body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с картинкой, кнопками и списком</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 150px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .sidebar button {
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .image-container {
+            width: 200px;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <button>Кнопка 1</button>
+        <button>Кнопка 2</button>
+        <button>Кнопка 3</button>
+        <button>Кнопка 4</button>
+    </div>
+    <div class="main-content">
+        <h2>Список элементов</h2>
+        <ul>
+            <li>Элемент 1</li>
+            <li>Элемент 2</li>
+            <li>Элемент 3</li>
+            <li>Элемент 4</li>
+            <li>Элемент 5</li>
+            <li>Элемент 6</li>
+            <li>Элемент 7</li>
+            <li>Элемент 8</li>
+            <li>Элемент 9</li>
+            <li>Элемент 10</li>
+        </ul>
+    </div>
+    <div class="image-container">
+        <img src="your-image.jpg" alt="Example Image">
+    </div>
+</body>
 </html>
